@@ -1,0 +1,2 @@
+<app-login *ngIf="!logginSuccess" (onLogging)="doLogin($event)">Loading...</app-login>
+<app-home *ngIf="logginSuccess" [mailHome]="mailApp" (onLogout)="logginSuccess = false">Loading...</app-home>

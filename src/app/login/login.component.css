@@ -1,0 +1,44 @@
+form {
+	display: flex;
+	flex-direction: column;
+  width: 50%;
+  min-width: 250px;
+  max-width: 400px;	
+	position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input {
+	padding: 5px 15px;
+  margin-top: 5px;
+}
+
+span {
+  color: #cc0033;
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+img {
+  content:url(https://cdn2.iconfinder.com/data/icons/rounded_square_icons__books_by_deleket-dexzmr/320/Recipe_Book.png);
+  margin: auto;
+  width: 200px; 
+  height: 200px;
+  padding: 5px 0px 10px 0px;
+}
+
+/* https://www.bestcssbuttongenerator.com */
+button {
+	border: 0;
+	border-radius: 10px;
+  background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	color:#ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-shadow:0px 1px 0px #154682;
+  line-height: 30px;
+  margin-top: 10px;
+}
