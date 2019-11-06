@@ -1,18 +1,11 @@
-<div class="panel panel-default">
+<div class="panel panel-primary">
 	<div class="panel-heading">Listado</div>
 	<div class="panel-body">
 		<div class="panel-group">
-			<div class="panel panel-default">
-				<div class="panel-heading">Panel Header</div>
-				<div class="panel-body">Panel Content</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">Panel Header</div>
-				<div class="panel-body">Panel Content</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">Panel Header</div>
-				<div class="panel-body">Panel Content</div>
+      <span class="text-info" *ngIf="recetaService.recipeList.length == 0">Sin Recetas</span>
+			<div class="panel panel-info" *ngFor="let item of recetaService.recipeList">
+				<div class="panel-heading">{{item.titulo}}</div>
+				<div class="panel-body">{{item.descripcion}}</div>
 			</div>
 		</div>
 	</div>

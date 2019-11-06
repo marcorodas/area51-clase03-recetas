@@ -1,1 +1,11 @@
-/* Add application styles & imports to this file! */
+.center-block{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.error-message{
+  color: #cc0033;
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+}

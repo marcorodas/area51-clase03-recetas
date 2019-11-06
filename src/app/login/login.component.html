@@ -1,9 +1,11 @@
-<form>
-	<img alt="Cook Book">
-	<input type='email' placeholder='Correo' (input)='onMailTyped($event)' (keyup.enter)="enterKey($event)">
-	<span *ngIf="usuario.error.mail">* {{usuario.error.mail}}</span>
-	<input type='password' placeholder='Contraseña' (input)='onPassTyped($event)' (keyup.enter)="enterKey($event)">
-	<span *ngIf="usuario.error.pass">* {{usuario.error.pass}}</span>
-	<button type='button' class="btn btn-primary" (click)="login()">Ingresar</button>
-  <span *ngIf="usuario.error.access">* {{usuario.error.access}}</span>
-</form>
+<div class="panel panel-default center-block">
+	<form class="panel-body">
+		<img alt="Cook Book">
+		<input type='email' placeholder='Correo' (input)='onMailTyped($event)' (keyup.enter)="enterKey($event)">
+		<span class="error-message" *ngIf="usuario.error.mail">* {{usuario.error.mail}}</span>
+		<input type='password' placeholder='Contraseña' (input)='onPassTyped($event)' (keyup.enter)="enterKey($event)">
+		<span class="error-message" *ngIf="usuario.error.pass">* {{usuario.error.pass}}</span>
+		<button type='button' class="btn btn-primary" (click)="login()">Ingresar</button>
+		<span class="error-message" *ngIf="usuario.error.access">* {{usuario.error.access}}</span>
+	</form>
+</div>

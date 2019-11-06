@@ -6,7 +6,7 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  logginSuccess: boolean = true;
+  logginSuccess: boolean = false;
   mailApp: string;
 
   doLogin(event) { 
