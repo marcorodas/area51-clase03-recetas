@@ -1,0 +1,9 @@
+<form>
+	<img alt="Cook Book">
+	<input type='email' placeholder='Correo' (input)='onMailTyped($event)' (keyup.enter)="enterKey($event)">
+	<span *ngIf="usuario.error.mail">* {{usuario.error.mail}}</span>
+	<input type='password' placeholder='Contraseña' (input)='onPassTyped($event)' (keyup.enter)="enterKey($event)">
+	<span *ngIf="usuario.error.pass">* {{usuario.error.pass}}</span>
+	<button type='button' (click)="login()">Ingresar</button>
+  <span *ngIf="usuario.error.access">* {{usuario.error.access}}</span>
+</form>
