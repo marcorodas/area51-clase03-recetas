@@ -7,10 +7,12 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { UsuarioService } from './usuario.service';
 import { RecetaService } from './receta.service';
+import { FormularioComponent } from './home/formulario/formulario.component';
+import { ListadoComponent } from './home/listado/listado.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent,  LoginComponent, HomeComponent ],
+  declarations: [ AppComponent,  LoginComponent, HomeComponent, FormularioComponent, ListadoComponent ],
   bootstrap:    [ AppComponent ],
   providers: [UsuarioService, RecetaService]
 })

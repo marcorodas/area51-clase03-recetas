@@ -1,0 +1,23 @@
+app-formulario{
+  padding-right: 2px;
+}
+app-listado{
+  padding-left: 2px;
+}
+div.row{
+  min-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (min-width: 800px) {
+  div.row {
+    min-width: 800px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  div.row {
+    min-width: 1000px;
+  }
+}

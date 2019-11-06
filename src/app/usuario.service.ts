@@ -30,7 +30,7 @@ export class UsuarioService {
         return true;
       }
     }
-    usuario.error.access = "¡Usuario o contraseña inválidos!";
+    usuario.error.access = "¡Usuario y/o contraseña inválidos!";
     return false;
   }
 }
