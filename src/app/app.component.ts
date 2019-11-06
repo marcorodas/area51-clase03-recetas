@@ -9,7 +9,7 @@ export class AppComponent {
   logginSuccess: boolean = false;
   mailApp: string;
 
-  doLogin(event) {
+  doLogin(event) { 
     this.logginSuccess = true;
     this.mailApp = event;
   }
